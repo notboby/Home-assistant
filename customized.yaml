@@ -1,0 +1,29 @@
+#Wemo
+switch.wemo_motion :
+ icon : mdi:radar
+ friendly_name : 'Mouvements'
+switch.wemo_sapin :
+ entity_picture : N/A
+#Netatmo
+sensor.NetAtmo_Exterieur_Humidity:
+ icon: mdi:water
+ friendly_name : 'Humidité'
+sensor.NetAtmo_Exterieur_Temperature:
+ friendly_name : 'Température'
+sensor.NetAtmo_Station_CO2:
+ icon: mdi:tree
+ friendly_name : 'Taux de CO2'
+sensor.NetAtmo_Station_Humidity:
+ icon: mdi:water
+ friendly_name : 'Humidité'
+sensor.NetAtmo_Station_Noise:
+ icon: mdi:volume-high
+ friendly_name : 'Volume sonore'
+sensor.NetAtmo_Exterieur_Pressure:
+ icon: mdi:gauge
+ friendly_name : 'Pression'
+sensor.NetAtmo_Station_Pressure:
+ icon: mdi:gauge
+ friendly_name : 'Pression'
+sensor.NetAtmo_Station_Temperature:
+ friendly_name : 'Température'

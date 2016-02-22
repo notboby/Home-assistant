@@ -1,0 +1,9 @@
+# Recherche des appareils connectes au reseau grace a nmap
+-  platform: nmap_tracker
+   hosts: 192.168.1.0/24
+   home_interval: 10
+
+# Localisation de la famille grace a icloud
+-  platform: icloud
+   username: N/A
+   password: N/A

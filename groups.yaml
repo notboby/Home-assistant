@@ -1,0 +1,24 @@
+cuisine :
+     - light.cuisine
+salon :
+     - light.salon
+chambre_de_robin :
+     - light.chambre
+     - sensor.NetAtmo_Station_Temperature
+     - sensor.NetAtmo_Station_Pressure
+     - sensor.NetAtmo_Station_CO2
+     - sensor.NetAtmo_Station_Humidity
+     - sensor.NetAtmo_Station_Noise
+     - switch.wemo_motion
+Appareils :
+     - device_tracker.philipshue1home
+     - device_tracker.limahome
+Famille :
+     - device_tracker.iphonedececile
+     - device_tracker.ipaddececile
+     - device_tracker.iphonederobin
+     - device_tracker.iphonedethierry
+Exterieur :
+     - sensor.NetAtmo_Exterieur_Temperature
+     - sensor.NetAtmo_Exterieur_Pressure
+     - sensor.NetAtmo_Exterieur_Humidity

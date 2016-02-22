@@ -1,0 +1,111 @@
+####################################################
+#                                                  #
+#                  Basic Settings                  #
+#                                                  #
+####################################################
+
+### Global Configuration ###
+homeassistant:
+  # Name of the location where Home Assistant is running
+  name: Maison
+  # Location required to calculate the time the sun rises and sets
+  latitude: N/A
+  longitude: N/A
+  # C for Celcius, F for Fahrenheit
+  temperature_unit: C
+  # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+  time_zone: Europe/Paris
+  customize: !include customized.yaml
+
+### HTTP ###
+http:
+  api_password : N/A
+
+### Liens ###
+weblink:
+  entities:
+    - name: Livebox
+      url: http://192.168.1.1
+####################################################
+#                                                  #
+#                  Zones                           #
+#                                                  #
+####################################################
+
+zone:
+  name: Ecole Curie Pasteur
+  latitude: N/A
+  longitude: N/A
+  # Optional radius in meters (default: 100)
+  radius: 100
+  # Optional icon to show instead of name
+  icon: mdi:school
+
+zone 2:
+  name: Maison
+  latitude: N/A
+  longitude: N/A
+  radius: 50
+  icon: mdi:home-variant
+
+zone 3:
+  name: College de St Andre
+  latitude: N/A
+  longitude: N/A
+  radius: 100
+  icon: mdi:school
+
+zone 4:
+  name: Maison Papi-Mami
+  latitude: N/A
+  longitude: N/A
+  radius: 100
+  icon: mdi:home-variant
+
+####################################################
+#                                                  #
+#                     Enables                      #
+#                                                  #
+####################################################
+
+# Enables the frontend
+frontend:
+
+# Checks for available updates
+updater:
+
+# View all events in a logbook
+logbook:
+
+# Track the sun
+sun:
+
+# Allows you to issue voice commands from the frontend
+conversation:
+
+# Enables support for tracking state changes over time.
+history:
+
+# Discover some devices automatically
+discovery:
+
+####################################################
+#                                                  #
+#                     Includes                     #
+#                                                  #
+####################################################
+
+###  Devices  ###
+device_tracker: !include devices/device_trackers.yaml
+media_player: !include devices/media_players.yaml
+switch: !include devices/switches.yaml
+sensor: !include devices/sensors.yaml
+light: !include devices/light.yaml
+
+###  Groups  ###
+group: !include groups.yaml
+
+### Automation ###
+automation: !include automation.yaml
+
+

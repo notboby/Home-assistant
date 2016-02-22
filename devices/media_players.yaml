@@ -1,0 +1,5 @@
+# Chromecast
+-   platform: cast
+
+# Plex
+-  platform: plex

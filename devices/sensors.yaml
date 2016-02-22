@@ -1,0 +1,26 @@
+# Netatmo
+-  platform: netatmo
+   api_key: N/A
+   secret_key: N/A
+   username: N/A
+   password: N/A
+   modules:
+     Station:
+       - temperature
+       - humidity
+       - noise
+       - pressure
+       - co2
+     Exterieur:
+       - temperature
+       - humidity
+
+# Speedtest
+- platform: speedtest
+  minute:
+    - 0
+    - 30
+  monitored_conditions:
+    - ping
+    - download
+    - upload
